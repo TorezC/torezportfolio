@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.black{
+    background-color: black;
+}
+.main-color{
+    color: #5129d0;;
+}
+section{
+    padding: 100px 0px;
+}
+section .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    /* margin-bottom: 60px; */
+    padding-bottom: 10px;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+a, .white {
+    color: white;
+}
+.about .about-content,
+.projects .project-content,
+.skills .skills-content,
+.contact .contact-content .img-about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.buton-clicks{
+    display: inline-block;
+    background: #5129d0;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #5129d0;
+}
+.title-content{
+    text-align: center; 
+    font-weight: bold; 
+    color: #5129d0;
+}
+
+/* Navbar */
+.navbar{
+    /* background-color: blue; */
+    padding: 30px 0px;
+position: fixed;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    padding: 15px 0;
+    background: #5129d0;
+    transition: all 0.3s ease;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.logo > a{
+    color: white;
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links > li{
+    padding-right: 20px;
+}
+.bar{
+    background-color: white;
+    width: 20px;
+    height: 1px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.dash{
+    display: none;
+}
+
+/* Home */
+.home{
+    background: url(../images/me2.JPG) no-repeat center ;
+    height: 70vh;
+    display: flex;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.text-1{
+    font-size: 27px;
+}
+.text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/* about */
+.left, .right{
+    flex: 1;
+}
+.about .title{
+    text-align: center;
+}
+.left > img, .img-about > img, .project-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Skils */
+.skills ul li {
+    padding-bottom: 8px;
+}
+
+.skills ul li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* media queries */
+@media (max-width: 1104px) {
+    .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .text-2{
+        font-size: 70px;
+    }
+    .text-3{
+        font-size: 35px;
+    }
+    .home-content > a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    #menu{
+        display: none;
+    }
+    .dash{
+        display: block;
+    } 
+    #menu{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .max-width{
+        padding: 0 23px;
+    }
+    .text-2{
+        font-size: 60px;
+    }
+    .text-3{
+        font-size: 32px;
+    }
+    .home-content > a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-2{
+        font-size: 50px;
+    }
+    .text-3{
+        font-size: 27px;
+    }
+    .text{
+        font-size: 19px;
+    }
+}
+
+
